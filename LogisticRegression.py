@@ -13,3 +13,15 @@ y = df['churn']
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
+# Train the model
+model = LogisticRegression()
+model.fit(X_train, y_train)
+
+# Evaluate the model on the test data
+y_pred = model.predict(X_test)
+accuracy = accuracy_score(y_test, y_pred)
+print(f'Model accuracy: {accuracy:.2f}')
+
+# Make predictions on new data
+new_data = ... # Load the new data here
+new_predictions = model.predict(new_data)
