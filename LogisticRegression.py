@@ -25,3 +25,7 @@ print(f'Model accuracy: {accuracy:.2f}')
 # Make predictions on new data
 new_data = ... # Load the new data here
 new_predictions = model.predict(new_data)
+
+#This code trains a logistic regression model on the training data, evaluates its performance on the test data, and then uses the trained model to make predictions on new data.
+
+#Of course, this is just one example of how you could approach this problem using machine learning. There are many other algorithms and techniques that you could use to build a model for binary classification. The specific approach that you choose will depend on the specific characteristics of your data and the goals of your project.
