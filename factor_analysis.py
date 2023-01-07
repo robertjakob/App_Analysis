@@ -31,7 +31,7 @@ y = df["churn"]
 model = LogisticRegression()
 model.fit(X, y)
 
-# Generate report
+# Generate reports
 def generate_report(model, churn_rate, avg_age):
   report = "---\n"
   report += "Introduction:\n"
